@@ -4,14 +4,13 @@ import SpotPage from "./pages/SpotPage";
 import ContractPage from "./pages/ContractPage";
 import NavBar from "./components/NavBar";
 function App() {
-  const brandName = "Hoptrans Logistics- Maršrutų skaičiouklė";
+  const brandName = "Maršrutų skaičiuoklė";
   return(
     
     <BrowserRouter>
-    <div>
-      <NavBar header={brandName}
-      />
-    </div>
+      <div>
+        <NavBar header={brandName}/>
+      </div>
       <Routes>
         <Route index element={<HomePage />} />
         <Route path="/" element={<HomePage />} />

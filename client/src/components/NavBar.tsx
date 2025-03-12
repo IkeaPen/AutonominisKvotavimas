@@ -8,10 +8,13 @@ function NavBar({ header }: { header: string }) {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        {/* Logo / Brand */}
-        <Link className="navbar-brand" to="/">
-          {header}
-        </Link>
+        <div className="logo-container">
+          <img className="navbar-logo" src="/HoptransLogo.svg"></img>
+          {/* Logo / Brand */}
+          <Link className="navbar-brand" to="/">
+            {header}
+          </Link>
+        </div>
 
         {/* Navigation Items */}
         <ul className="navbar-menu">

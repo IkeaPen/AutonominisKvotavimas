@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react'
+import { Link } from "react-router";
+import "./HomePage.css"
 
 function HomePage() {
-  const [getValue, setGetValue] = useState("");
+  /*const [getValue, setGetValue] = useState("");
 
   
   useEffect(() => {
@@ -14,12 +15,23 @@ function HomePage() {
         setGetValue("Express server is not working.")
       }
     });
-  }, []);
+  }, []);*/
   
   return(
     <>
-      <h1>Test</h1>
-      <h2>{getValue}</h2>
+    <div className="div1">
+      <h1 className="header1">Pervežimo tipas:</h1>
+      <div className="div2">
+        <Link className="button1" to="/spot">Spot</Link>
+        <Link className="button1" to="/contract">Contract</Link>
+      </div>
+    </div>
+
+    <div className="div3">
+      <h1 className="header2">Indeksų nustatymai:</h1>
+      <Link className="button2" to="/index">Indeksai</Link>
+    </div>
+    
     </>
   );
 
