@@ -9,7 +9,7 @@ function NavBar({ header }: { header: string }) {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="logo-container">
-          <img className="navbar-logo" src="/HoptransLogo.svg"></img>
+        <a href="/"><img className="navbar-logo" src="/HoptransLogo.svg" ></img></a>
           {/* Logo / Brand */}
           <Link className="navbar-brand" to="/">
             {header}
@@ -26,6 +26,9 @@ function NavBar({ header }: { header: string }) {
           </li>
           <li className="nav-item">
             <NavLink to="/contract" className="nav-link">Contract</NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="/index" className="nav-link">Indeksai</NavLink>
           </li>
         </ul>
       </div>
